@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+:root {
+  --color-blue: #3b74ba;
+  --main-background: #eee;
+  --font-color: #b6b6b6;
+}
+body {
+  height: 100vh;
+  background-color: var(--main-background);
+}
+.container {
+  margin: 150px auto;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.main .sub-main {
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 10px #454444;
+}
+.main .sub-main img {
+  position: absolute;
+  top: -107px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .sub-main .text {
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px 0px;
+  border-bottom: 2px solid #eee;
+}
+.main .sub-main .text h1 {
+  color: var(--color-blue);
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.main .sub-main .text p {
+  color: var(--font-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+}
+a p i {
+  margin-right: 10px;
+  margin-top: 3px;
+  font-size: 25px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.social i {
+  font-size: 25px;
+}
+a p {
+  font-size: 22px;
+}
+.fb {
+  color: #0f8ff2;
+}
+.instagram {
+  color: #fe2376;
+}
+.ln {
+  color: #0a66c2;
+}
+span {
+  position: absolute;
+  bottom: -22px;
+  right: 6px;
+  background-color: var(--color-blue);
+  padding: 6px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+}
+@media (max-width: 450px) {
+  .main .sub-main .text h1 {
+    margin-bottom: 5px;
+    font-size: 32px;
+  }
+  .main .sub-main .text p {
+    font-size: 16px;
+  }
+  .social i {
+    font-size: 18px;
+    margin-top: -1px;
+  }
+  a p {
+    font-size: 15px;
+  }
+}
